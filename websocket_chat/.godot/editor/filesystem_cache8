@@ -1,0 +1,15 @@
+2a60927148abd1d33b818b535e306557
+::res://::1693744079
+chat.tscn::PackedScene::6501801754467712981::1693744013::0::1::::<><>::
+client.gd::GDScript::-1::1693741458::0::1::::<>Control<>::
+client.tscn::PackedScene::1069115919107768497::1693744013::0::1::::<><>::uid://cyvrywci15kev<>res://websocket/WebSocketClient.gd<>res://client.gd
+combo.tscn::PackedScene::8853687069215460744::1693744013::0::1::::<><>::uid://ph5ghsflqegf
+icon.webp::CompressedTexture2D::3626017087650301524::1693669615::1693713020::1::::<><>::
+README.md::TextFile::-1::1693669615::0::1::::<><>::
+sample_client.tscn::PackedScene::6978442434319507196::1693726161::0::1::::<><>::res://ws.gd
+server.gd::GDScript::-1::1693669615::0::1::::<>Control<>::
+server.tscn::PackedScene::1166790402972405900::1693669615::0::1::::<><>::uid://cyvrywci15kev<>res://server.gd<>res://websocket/WebSocketServer.gd
+ws.gd::GDScript::-1::1693725370::0::1::::<>Node<>::
+::res://websocket/::1693742203
+WebSocketClient.gd::GDScript::-1::1693742203::0::1::::WebSocketClient<>Node<>::
+WebSocketServer.gd::GDScript::-1::1693742053::0::1::::WebSocketServer<>Node<>::
