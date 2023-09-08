@@ -1,5 +1,0 @@
-res://combo.tscn
-res://websocket/WebSocketClient.gd
-res://websocket/WebSocketServer.gd
-res://client.tscn
-res://chat.tscn

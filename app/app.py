@@ -11,16 +11,17 @@ app.add_middleware(
     allow_headers=["*"]
 )
 templates = Jinja2Templates(directory="templates")
-
-chat_log = list()
 user_chats = dict()
-@app.get("/home")
-async def search(request: Request):
+
+@app.get("/home/{user_id}")
+async def search(request:Request, user_id:str):
     """チャットログを表示"""
+    print(user_chats[user_id])
     return templates.TemplateResponse(
         "index.html", {
             "request": request,
-            "chat_log": chat_log
+            "user_id": user_id,
+            "chat_log": user_chats[user_id]
         }
     )
 
@@ -36,7 +37,6 @@ async def websocket_endpoint(websocket: WebSocket):
     while True:
         data = await websocket.receive_text()
         print(f"ID: {key} | Message: {data}")
-        chat_log.append(f"ID: {key} | Message: {data}")
         if key not in user_chats:
             user_chats[key] = []
         user_chats[key].append(data)
