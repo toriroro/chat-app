@@ -25,8 +25,12 @@ async def search(request:Request, user_id:str):
         }
     )
 
+@app.get("/")
+async def hello():
+    return {"text": "Hello world!"}
+
 clients = {}
-@app.websocket("/")
+@app.websocket("/ws/")
 async def websocket_endpoint(websocket: WebSocket):
     """チャットアプリのウェブソケット"""
     await websocket.accept()
